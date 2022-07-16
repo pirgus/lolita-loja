@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@100;300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 64px;
+    color: #E8396F;
+}
+
+h2{
+    font-family: Poppins;
+    font-size: 50px;
+    line-height: 54px;
+    color: #E89739;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+/*  Header  */
+#header{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header a img{
+    position: relative;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #312f30;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #ff317f;
+}
+
+.search input[type=text]{
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #dadada;
+}
+
+.search{
+    float: right;
+    margin: 7px;
+}
+
+.slideshow-container{
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    height: 540px;
+}
+
+.mySlides{
+    display: none;
+    transition: all 0.75s;
+}
+
+.anter, .prox{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ff317f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 25px 25px;
+    user-select: none;
+}
+
+.prox{
+    right: 0;
+    border-radius: 25px 25px;
+}
+
+.anter:hover, .prox:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 5px;
+    background-color: #312f30;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+.active, .dot:hover{
+    background-color: #E8396F;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 0.6s;
+    transition: ease-in;
+}
+
+.mySlides img{
+    object-fit: cover;
+    height: 540px;
+    width: inherit;
+    transition: 1s;
+}
+
+.mySlides img.active{
+    opacity: 1;
+}
+
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    color: #E8396F;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    color: #f86996;
+}
+
+.direita{
+    display: flex;
+}
+
+/* inicio */
+#inicio{
+    height: 100vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flow;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#inicio h11{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 64px;
+    color: #E8396F;
+}
+
+.title{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.row{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prod{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.prod img{
+    width: auto;
+    height: 350px;
+    transition: 0.3s ease;
+}
+
+.prod img:hover{
+    opacity: 70%;
+}
+
+.prod button{
+
+}
+
+.prod h6{
+    font-weight: normal;
+}
+
+footer{
+    width: 100% !important;
+    height: auto;
+    background-color: #ff317f;
+    text-align: center;
+    padding: 40px 20px 20px 0;
+    margin-bottom: 0;
+}
+
+h11{
+    font-size: 20px;
+}
+
+.btn1{
+    background-color: white;
+    border: none;
+    border-radius: 10px 10px;
+    color: #E8396F;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.column{
+    column-count: 1;
+}
+
