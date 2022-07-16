@@ -7,7 +7,7 @@
 }
 
 h1{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 64px;
@@ -15,7 +15,7 @@ h1{
 }
 
 h2{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 50px;
     line-height: 54px;
     color: #E89739;
@@ -249,31 +249,38 @@ nav li a.active{
     font-weight: normal;
 }
 
-footer{
-    width: 100% !important;
-    height: auto;
-    background-color: #ff317f;
-    text-align: center;
-    padding: 40px 20px 20px 0;
-    margin-bottom: 0;
-}
-
-h11{
-    font-size: 20px;
-}
-
 .btn1{
     background-color: white;
     border: none;
-    border-radius: 10px 10px;
+    border-radius: 10px;
     color: #E8396F;
     padding: 12px 12px;
-    font-size: 16px;
+    margin-left: 5px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.6s ease;
 }
 
-.column{
-    column-count: 1;
+.redes{
+    width: 100% !important;
+    height: auto;
+    background-color: #ff317f;
+    padding: 40px 20px 0 0;
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 0;
 }
 
+.txtredes{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    bottom: 0;
+}
