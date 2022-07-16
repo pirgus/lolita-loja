@@ -11,36 +11,37 @@
 
 <body>
 
-    <section id="header">
-        <a href="index.html"><img src="img/logo.png" class="logo" alt="logoImg"></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="categoria1.html">skincare</a></li>
-                <li><a href="categoria2.html">make</a></li>
-                <li><a href="categoria3.html">perfumaria</a></li>
-                <li><a href="categoria5.html">hair</a></li>
-                <li><a href="categoria6.html">body</a></li>
-                <li><a href="categoria4.html">cursos</a></li>
-                <div class="search">
-                    <form action="#">
-                        <input type="text"
-                               placeholder="   O que você procura?"
-                               name="search">
-                        <button class="btn">
-                            <i class="fa fa-search"
-                               style="font-size: 20px;">
-                            </i>
-                        </button>
-                    </form>
-                </div>
-                <div class="direita">
-                    <button class="btn"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 30px"></i></button>
-                    <button class="btn"><i class="fa fa-user" aria-hidden="true" style="font-size: 30px"></i></button>
-                </div>
-
-            </ul>
-        </div>
-    </section>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" class="logo" alt="logoImg">
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="categoria1.html">skincare</a></li>
+                    <li><a href="categoria2.html">make</a></li>
+                    <li><a href="categoria3.html">perfumaria</a></li>
+                    <li><a href="categoria5.html">hair</a></li>
+                    <li><a href="categoria6.html">body</a></li>
+                    <li><a href="categoria4.html">cursos</a></li>
+                    <li class="search">
+                        <form action="#">
+                            <input type="text"
+                                placeholder="   O que você procura?"
+                                name="search">
+                            <button class="btn">
+                                <i class="fa fa-search"
+                                style="font-size: 20px;">
+                                </i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="opcs-direita">
+                        <button class="btn"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 30px"></i></button>
+                        <button class="btn"><i class="fa fa-user" aria-hidden="true" style="font-size: 30px"></i></button>
+                    </li>
+                </ul>
+            </nav>
+    </header>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -55,8 +56,6 @@
             <img src="img/hero3.jpg" style="width:100%" class="slide-image">
         </div>
 
-
-
         <a class="anter" onclick="plusSlides(-1)">&#10094;</a>
         <a class="prox" onclick="plusSlides(1)">&#10095;</a>
 
@@ -65,10 +64,9 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
     </div>
 
-    <section id="inicio">
+    <div class="inicio">
         <div class="title">
             <h11>Catálogo</h11>
         </div>
@@ -112,10 +110,9 @@
                 <h5>Kit - Skincare</h5>
                 <h6> R$ 124,99</h6>
             </div>
-
         </div>
+    </div>
 
-    </section>
     <footer>
         <div class="row">
             <div class="column">
